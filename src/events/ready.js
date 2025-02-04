@@ -61,5 +61,7 @@ module.exports = {
       activities: [{ name: "MARA STORE", type: ActivityType.Playing }],
       status: "idle",
     });
+
+    require("./monitor")(client);
   },
 };
