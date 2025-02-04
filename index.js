@@ -210,3 +210,12 @@ client.on(Events.InteractionCreate, async (interaction) => {
     }
   }
 });
+
+
+
+// Jalankan server monitoring
+require('./monitor');
+
+client.once('ready', () => {
+  console.log(`Bot ${client.user.tag} is online!`);
+});
